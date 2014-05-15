@@ -362,6 +362,7 @@ local function DrawPlayerInfo(ply)
 	draw.DrawText(DarkRP.getPhrase("health", ply:Health()), "TCB_BebasNeue_1", pos.x + 1, pos.y + 35 + 1, Color(0,0,0,255), TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
 	draw.DrawText(DarkRP.getPhrase("health", ply:Health()), "TCB_BebasNeue_1", pos.x, pos.y + 35, Color(192, 57, 43, 255), TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
 	
+	local teamname = team.GetName(ply:Team())
 	draw.DrawText("Job: "..ply:getDarkRPVar("job") or teamname, "TCB_BebasNeue_1", pos.x + 1, pos.y + 60 + 1, Color(0,0,0,255), TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
 	draw.DrawText("Job: "..ply:getDarkRPVar("job") or teamname, "TCB_BebasNeue_1", pos.x, pos.y + 60, team.GetColor(ply:Team()), TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
 
