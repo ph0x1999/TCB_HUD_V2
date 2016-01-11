@@ -17,10 +17,10 @@ HUD.HealthColor = Color(192, 57, 43, 255)
 HUD.ArmorColor 	= Color(41, 128, 185, 255)
 
 -- Don't edit anything below this line.
-HUD.Width 	= 400
-HUD.Height 	= 150
+HUD.Width 	= 200
+HUD.Height 	= 75
 
-HUD.Border 	= 15
+HUD.Border 	= 10
 
 HUD.PosX 	= 0
 HUD.PosY	= 0
@@ -240,7 +240,7 @@ local function PlayerIcons()
 		surface.SetDrawColor(25,25,25,255)
 	end
 	surface.SetMaterial(Material(IconLicense))
-	surface.DrawTexturedRect( HUD.PosX + HUD.Width - 50 + 15, HUD.PosY + 15, 20, 20)
+	surface.DrawTexturedRect( HUD.PosX + HUD.Width - 25 + 10, HUD.PosY + 15, 20, 20)
 	
 	if LocalPlayer():getDarkRPVar("wanted") then
 		surface.SetDrawColor(255,255,255,255)
